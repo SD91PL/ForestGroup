@@ -17,12 +17,14 @@ body {
 	font-size: 1.6rem;
 }
 
-nav, .navbar, .navbar-expand-lg {
+nav,
+.navbar,
+.navbar-expand-lg {
 	padding: 0;
 }
 
 .navbar {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	height: 80px;
@@ -33,7 +35,7 @@ nav, .navbar, .navbar-expand-lg {
 		height: 80px;
 		font-size: 3rem;
 		line-height: 80px;
-		transition: background-color .33s, color .33s ;
+		transition: background-color 0.33s, color 0.33s;
 		&:hover {
 			background-color: #111;
 			color: #eee;
@@ -65,7 +67,7 @@ nav, .navbar, .navbar-expand-lg {
 				&:hover {
 					background-color: #222;
 					color: #eee;
-					cursor: pointer;					
+					cursor: pointer;
 				}
 				&:focus {
 					outline: none;
@@ -88,11 +90,11 @@ nav, .navbar, .navbar-expand-lg {
 		padding: 10px 30px;
 		border-radius: 0;
 		height: 80px;
-		transition: background-color .33s, color .33s ;
+		transition: background-color 0.33s, color 0.33s;
 		&:hover {
 			background-color: #222;
 			color: #eee;
-			cursor: pointer;					
+			cursor: pointer;
 		}
 		&:focus {
 			outline: none;
