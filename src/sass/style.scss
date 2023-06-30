@@ -17,6 +17,14 @@ body {
 	font-size: 1.6rem;
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+//  NAV
+
 nav,
 .navbar,
 .navbar-expand-lg {
@@ -29,6 +37,7 @@ nav,
 	width: 100%;
 	height: 80px;
 	background-color: #eee;
+	z-index: 1000;
 	.navbar-brand {
 		position: relative;
 		padding: 0 17px 0 10px;
@@ -108,3 +117,41 @@ nav,
 		}
 	}
 }
+
+// HEADER
+
+.header {
+	height: 365px;
+	.hero-img {
+		position: relative;
+		height: 365px;
+		background-image: url(../img/jungle-1807476_640.jpg);
+		background-position: 50% 80%;
+		background-size: cover;
+		background-attachment: fixed;
+		.hero-shadow {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		.hero-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			padding: 30px;
+			width: 100%;
+			text-align: left;
+			color: #eee;
+			.header-heading {
+				font-size: 1.6rem;
+			}
+			.header-text {
+				font-size: 2.7rem;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+// next move - media queries to header for tablets and desktop
