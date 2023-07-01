@@ -122,11 +122,11 @@ nav,
 // HEADER
 
 .header {
-	height: calc(60vh - 80px);
+	height: calc(100vh - 80px);
 	.hero-img {
 		position: relative;
 		height: 100%;
-		background-image: url(../img/jungle-1807476_640.jpg);
+		background-image: url(../img/jungle-1807476_1280.jpg);
 		background-position: 50% 80%;
 		background-size: cover;
 		.hero-shadow {
@@ -154,6 +154,49 @@ nav,
 	}
 }
 
+// MAIN
+.section {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.section-heading {
+	margin: 1em auto;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+// ABOUT-US
+.about-us {
+	width: 100%;
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 1em 0;
+		width: 100%;
+	}
+
+	&__img {
+		margin: 0 auto 1em;
+		min-width: 50%;
+		max-width: 100%;
+	}
+
+	&__title {
+		margin: 0.5em;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+
+	&__text {
+		margin: 0.5em;
+		padding: 0.2em;
+		font-size: 1.4rem;
+		text-align: justify;
+	}
+}
+
 // MEDIA QUERIES
 
 @media (min-width: 375px) {
@@ -162,18 +205,50 @@ nav,
 	}
 }
 
+@media (min-width: 576px) {
+	.about-us {
+		&__box {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			align-content: space-evenly;
+			padding: 0.2em;
+		}
+
+		&__img {
+			margin: 0.2em;
+			padding-left: 0.1em;
+			padding-right: 0.5em;
+		}
+
+		&__about-us__box-text {
+			// align-self: flex-start;
+			margin: 0.2em;
+			padding-left: 0.5em;
+			min-width: 50%;
+			max-width: 100%;
+		}
+
+		// &__title {
+			// align-self: flex-start;
+		// }
+
+		// &__text {
+			// align-self: flex-start;
+		// }
+	}
+}
+
 @media (min-width: 768px) {
 	.header {
 		height: 300px;
 	}
-
 }
 
 @media (min-width: 992px) {
 	.header {
 		height: 305px;
 		.hero-img {
-			background-image: url(../img/jungle-1807476_1280.jpg);
 			background-position: 50% 68%;
 			.hero-text {
 				.header-heading {
