@@ -9,13 +9,13 @@
 :root {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	scroll-padding-top: 80px;
+	scroll-padding-top: 79px;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
-	// background-color: #eee;
+	background-color: #fff;
 }
 
 .wrapper {
@@ -30,6 +30,7 @@ nav,
 .navbar,
 .navbar-expand-lg {
 	padding: 0;
+	font-size: 1.6rem;
 }
 
 .navbar {
@@ -159,6 +160,7 @@ nav,
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
+	margin-bottom: 2em;
 }
 
 .section-heading {
