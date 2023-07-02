@@ -9,7 +9,7 @@
 :root {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	scroll-padding-top: 79px;
+	scroll-padding-top: 80px;
 }
 
 body {
@@ -173,7 +173,6 @@ nav,
 	&__box {
 		display: flex;
 		flex-direction: column;
-		margin: 1em 0;
 		width: 100%;
 	}
 
@@ -218,30 +217,34 @@ nav,
 		&__img {
 			margin: 0.2em;
 			padding-left: 0.1em;
-			padding-right: 0.5em;
+			padding-right: 1em;
 		}
 
-		&__about-us__box-text {
-			// align-self: flex-start;
+		&__box-text {
+			align-self: flex-start;
 			margin: 0.2em;
-			padding-left: 0.5em;
 			min-width: 50%;
 			max-width: 100%;
 		}
 
-		// &__title {
-			// align-self: flex-start;
-		// }
+		&__title {
+			font-size: 2rem;
+		}
 
-		// &__text {
-			// align-self: flex-start;
-		// }
+		&__text {
+			font-size: 1.5rem;
+		}
 	}
 }
 
 @media (min-width: 768px) {
 	.header {
 		height: 300px;
+	}
+	.about-us {
+		&__img {
+			padding-right: 1.2em;
+		}
 	}
 }
 
@@ -260,6 +263,18 @@ nav,
 			}
 		}
 	}
+
+	.about-us {
+		&__img {
+			padding-right: 1.5em;
+		}
+		&__title {
+			font-size: 2.2rem;
+		}
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -276,5 +291,8 @@ nav,
 				}
 			}
 		}
+	}
+	.section-heading {
+		font-size: 3.2rem;
 	}
 }
