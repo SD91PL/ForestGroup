@@ -333,4 +333,15 @@ nav,
 	.section-heading {
 		font-size: 3.2rem;
 	}
+	.banner {
+		.hero-img {
+			background-image: url(../img/girl-5785590_1920.jpg);
+			.hero-text {
+				max-width: 1050px;
+				.banner-text {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
 }
