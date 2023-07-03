@@ -198,6 +198,7 @@ nav,
 	}
 }
 
+// BANNER
 .banner {
 	height: 300px;
 	.hero-img {
@@ -229,6 +230,47 @@ nav,
 			.banner-text {
 				margin: 0;
 				font-size: 3rem;
+			}
+		}
+	}
+}
+
+// OFFERS
+.offers {
+	width: 100%;
+	.container {
+		.offers-hint {
+			font-size: 1.6rem;
+			text-align: center;
+		}
+		.offers-wrap {
+			.offer-card {
+				.offer-box {
+					margin: 20px 10px;
+					padding: 30px;
+					background-color: #eee;
+					text-align: center;
+					box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+					transition: scale 0.3s;
+					h3 {
+						color: #000;
+						text-transform: uppercase;
+					}
+					span {
+						font-weight: bold;
+					}
+					i {
+						padding: 0 5px;
+						font-size: 24px;
+					}
+					.btn {
+						padding: 10px 20px;
+						text-transform: uppercase;
+					}
+				}
+				.offer-box:hover {
+					scale: 1.04;
+				}
 			}
 		}
 	}
