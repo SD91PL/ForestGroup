@@ -255,7 +255,7 @@ nav,
 					flex-direction: column;
 					justify-content: center;
 					margin: 20px 10px;
-					padding: 30px;
+					padding: 20px 15px;
 					width: 100%;
 					max-width: 300px;
 					background-color: #fff;
@@ -266,19 +266,28 @@ nav,
 					h3 {
 						color: #000;
 						font-size: 2rem;
+						margin: 10px 0;
 					}
 					.price {
 						font-size: 4rem;
 					}
-					p {
-						font-size: 1.4rem;
-					}
 					ul {
+						display: flex;
+						flex-direction: column;
 						list-style: none;
-						margin: 0 auto;
 						li {
-							text-align-last: left;
+							padding: 5px;
+							text-align: left;
 							font-size: 1.4rem;
+							.check-icon {
+								padding-right: 1rem;
+							}
+							.minus-icon {
+								padding-right: 1rem;
+							}
+						}
+						.minus {
+							color: #858685;
 						}
 					}
 
@@ -291,17 +300,20 @@ nav,
 
 					.btn-standard {
 						background-color: #2ade72;
+						box-shadow: 0px 3px 8px rgba(29, 158, 81, 0.9);
 					}
-				}
-				.offer-box:hover {
-					scale: 1.04;
 				}
 			}
 		}
 		.offers-info {
-			a{
+			a {
 				text-decoration: none;
 				font-weight: bold;
+				color: #333;
+				transition: color 0.33s;
+			}
+			a:hover {
+				color: #2ade72;
 			}
 		}
 	}
@@ -346,6 +358,23 @@ nav,
 			font-size: 1.5rem;
 		}
 	}
+	.offers {
+		.container {
+			.offers-wrap {
+				.offer-card {
+					.offer-box {
+						padding: 20px 10px;
+						h3 {
+							margin: 10px 0;
+						}
+						ul {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -355,6 +384,24 @@ nav,
 	.about-us {
 		&__img {
 			padding-right: 1.2em;
+		}
+	}
+	.offers {
+		.container {
+			.offers-wrap {
+				.offer-card {
+					.offer-box {
+						padding: 30px;
+						h3 {
+							margin-top: 8px;
+							margin-bottom: 12px;
+						}
+						ul {
+							margin-left: 10%;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -406,6 +453,7 @@ nav,
 	.section-heading {
 		font-size: 3.2rem;
 	}
+
 	.banner {
 		.hero-img {
 			background-image: url(../img/girl-5785590_1920.jpg);
@@ -413,6 +461,50 @@ nav,
 				max-width: 1050px;
 				.banner-text {
 					font-size: 4rem;
+				}
+			}
+		}
+	}
+
+	.offers {
+		.container {
+			.offers-wrap {
+				.offer-card {
+					.offer-box {
+						max-width: 90%;
+					}
+					.offer-box:hover {
+						scale: 1.02;
+					}
+					.offer-standard:hover {
+						scale: 1.08;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.offers {
+		.container {
+			max-width: 1080px;
+			.offers-wrap {
+				.offer-card {
+					.offer-box {
+						max-width: 95%;
+						h3 {
+							font-size: 2.4rem;
+						}
+						ul {
+							li {
+								font-size: 1.6rem;
+							}
+						}
+					}
+					.offer-standard:hover {
+						scale: 1.04;
+					}
 				}
 			}
 		}
