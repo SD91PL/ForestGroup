@@ -307,12 +307,13 @@ nav,
 					.btn-standard {
 						background-color: #2ade72;
 						box-shadow: 0px 3px 8px rgba(29, 158, 81, 0.9);
+						border-color: transparent;
 					}
-					
+
 					.glass {
 						visibility: visible;
 					}
-					
+
 					.glass::before {
 						display: block;
 						position: absolute;
@@ -350,6 +351,8 @@ nav,
 		}
 	}
 }
+
+
 
 // MEDIA QUERIES
 
