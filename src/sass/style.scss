@@ -140,7 +140,8 @@ nav,
 		.hero-shadow {
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.6);
+			background-color: rgba(0, 0, 0, 0.5);
+			transition: background-color .67s;
 		}
 		.hero-text {
 			position: absolute;
@@ -150,7 +151,8 @@ nav,
 			padding: 30px;
 			width: 100%;
 			text-align: left;
-			color: #eee;
+			color: #fff;
+			transition: text-shadow .67s;
 			.header-heading {
 				font-size: 1.6rem;
 			}
@@ -158,6 +160,14 @@ nav,
 				font-size: 2.7rem;
 				font-weight: bold;
 			}
+		}
+	}
+	.hero-img:hover {
+		.hero-shadow {
+			background-color: rgba(0, 0, 0, 0.55);
+		}
+		.hero-text{
+			text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
 		}
 	}
 }
@@ -217,7 +227,8 @@ nav,
 		.hero-shadow {
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, 0.1);
+			transition: background-color 0.67s
 		}
 		.hero-text {
 			display: flex;
@@ -231,12 +242,28 @@ nav,
 			width: 90%;
 			max-width: 830px;
 			text-align: center;
-			color: #eee;
-			background-color: rgba(0, 0, 0, 0.5);
-			border: #eee 1px solid;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.6);
+			border: #fff 1px solid;
+			transition: background-color .67s;
 			.banner-text {
 				margin: 0;
 				font-size: 3rem;
+				transition: text-shadow .67s;
+			}
+		}
+	}
+	.hero-img:hover {
+		.hero-shadow {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+		.hero-text{
+				background-color: rgba(0, 0, 0, 0.64);
+		}
+		.hero-text:hover{
+			background-color: rgba(0, 0, 0, 0.68);
+			.banner-text {
+				text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
 			}
 		}
 	}
