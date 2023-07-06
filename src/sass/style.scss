@@ -410,7 +410,10 @@ nav,
 						list-style: none;
 						li {
 							font-size: 1.4rem;
+							padding: 0.5rem 0;				
 							a {
+								padding: 1rem 2rem 1rem 0;
+								line-height: 2.6rem;
 								text-decoration: none;
 								color: #000;
 								transition: color 0.33s, background-color 0.33s;
