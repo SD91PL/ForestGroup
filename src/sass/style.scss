@@ -24,9 +24,9 @@ body {
 	max-width: 1200px;
 }
 
-// .container {
-// 	padding: 0;
-// }
+.container {
+	padding: 0 7.5px;
+}
 
 //  NAV
 
@@ -73,7 +73,6 @@ nav,
 	}
 	.navbar-collapse {
 		.navbar-nav {
-			// background-color: #eee;
 			background-color: #fff;
 			box-shadow: 0px 5px 5px #00000040;
 			.nav-link {
@@ -83,7 +82,6 @@ nav,
 				text-align: center;
 				line-height: 20px;
 				border-bottom: 1px solid rgba(193, 193, 193, 0.2);
-				// background-color: #fff;
 				&:hover {
 					background-color: #222;
 					color: #eee;
@@ -344,6 +342,7 @@ nav,
 			}
 		}
 		.offers-info {
+			font-size: 1.4rem;
 			text-align: center;
 			a {
 				text-decoration: none;
@@ -361,14 +360,17 @@ nav,
 	}
 }
 
+// FOOTER
 .footer {
 	display: block;
 	background-color: #eee;
 	.wrapper {
 		.footer-box {
 			display: flex;
-			// flex-direction: column;
+			// flex-direction: row;
 			margin: 0;
+			padding-top: 0.6rem; 
+			padding-bottom: 0.6rem;
 			width: 100%;
 			.footer-logo {
 				display: none;
@@ -394,7 +396,10 @@ nav,
 				width: 100%;
 				// background-color: tomato;
 				.footer-nav-card {
+					position: relative;
+					left: 33.3%;
 					margin: 3rem 0;
+					width: 66.6%;
 					// background-color: royalblue;
 					h3 {
 						font-size: 2rem;
@@ -486,60 +491,16 @@ nav,
 		}
 	}
 	.footer {
-		display: block;
-		background-color: #eee;
 		.wrapper {
 			.footer-box {
-				display: flex;
-				// flex-direction: column;
-				margin: 0;
-				width: 100%;
 				.footer-logo {
 					display: block;
-					padding: 0 20px;
-					width: 100%;
-					// background-color: gold;
-					.footer-brand {
-						margin: 3rem;
-						img {
-							height: 4rem;
-						}
-						p {
-							display: inline-block;
-							position: relative;
-							top: 12px;
-							left: 10px;
-							font-size: 4.4rem;
-						}
-					}
 				}
 				.footer-nav {
-					padding: 2rem 0;
-					width: 100%;
-					// background-color: tomato;
 					.footer-nav-card {
-						margin: 3rem 0;
-						// background-color: royalblue;
-						h3 {
-							font-size: 2rem;
-							font-weight: bold;
-						}
-						ul {
-							padding: 0;
-							list-style: none;
-							li {
-								font-size: 1.4rem;
-								a {
-									text-decoration: none;
-									color: #000;
-									transition: color 0.33s, background-color 0.33s;
-								}
-								a:hover {
-									color: #fff;
-									background-color: #000;
-								}
-							}
-						}
+						// position: static; // or else
+						left: 0;
+						width: 100%;
 					}
 				}
 			}
@@ -599,7 +560,6 @@ nav,
 			}
 		}
 	}
-
 	.about-us {
 		&__img {
 			padding-right: 1.5em;
@@ -609,6 +569,32 @@ nav,
 		}
 		&__text {
 			font-size: 1.6rem;
+		}
+	}
+
+	.footer {
+		.wrapper {
+			.footer-box {
+				padding-top: 0.8rem; 
+				padding-bottom: 0.8rem; 
+				.footer-nav {
+					display: flex; 
+					flex-direction: row; 
+					justify-content: flex-start; 
+					align-items: flex-start; 
+					.footer-nav-card {
+						&--one {
+							flex-basis: 66%;
+						}
+						&--two {
+							flex-basis: 100%; 
+						}
+						&--three {
+							flex-basis: 100%;
+						}
+					}
+				}
+			}
 		}
 	}
 }
