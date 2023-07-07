@@ -141,7 +141,7 @@ nav,
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.5);
-			transition: background-color .67s;
+			transition: background-color .33s;
 		}
 		.hero-text {
 			position: absolute;
@@ -152,7 +152,8 @@ nav,
 			width: 100%;
 			text-align: left;
 			color: #fff;
-			transition: text-shadow .67s;
+			transform-origin: left;
+			transition: transform .33s;
 			.header-heading {
 				font-size: 1.6rem;
 			}
@@ -166,8 +167,8 @@ nav,
 		.hero-shadow {
 			background-color: rgba(0, 0, 0, 0.55);
 		}
-		.hero-text{
-			text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
+		.hero-text {
+			transform: translateY(-50%) translateX(-50%) scale(1.02);
 		}
 	}
 }
