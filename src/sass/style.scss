@@ -228,7 +228,7 @@ nav,
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.1);
-			transition: background-color 0.67s
+			transition: background-color 0.33s
 		}
 		.hero-text {
 			display: flex;
@@ -245,11 +245,11 @@ nav,
 			color: #fff;
 			background-color: rgba(0, 0, 0, 0.6);
 			border: #fff 1px solid;
-			transition: background-color .67s;
+			transition: background-color .33s;
 			.banner-text {
 				margin: 0;
 				font-size: 3rem;
-				transition: text-shadow .67s;
+				transition: scale .33s, text-shadow .33s;
 			}
 		}
 	}
@@ -259,10 +259,14 @@ nav,
 		}
 		.hero-text{
 				background-color: rgba(0, 0, 0, 0.64);
+				.banner-text {
+					scale: 1.01;
+				}
 		}
 		.hero-text:hover{
 			background-color: rgba(0, 0, 0, 0.68);
 			.banner-text {
+				scale: 1.04;
 				text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
 			}
 		}
