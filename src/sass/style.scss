@@ -188,10 +188,6 @@ nav,
 	font-weight: normal;
 }
 
-button {
-	font-family: 'Montserrat', sans-serif;
-}
-
 // ABOUT-US
 .about-us {
 	width: 100%;
@@ -364,6 +360,11 @@ button {
 						.minus {
 							color: #858685;
 						}
+					}
+
+					button {
+						height: 46px;
+						font-family: 'Montserrat', sans-serif;
 					}
 
 					.btn {
