@@ -155,9 +155,11 @@ nav,
 			transform-origin: left;
 			transition: transform 0.33s;
 			.header-heading {
+				margin: 0 0 5px;
 				font-size: 1.6rem;
 			}
 			.header-text {
+				margin: 0 0 10px;
 				font-size: 2.7rem;
 				font-weight: bold;
 			}
