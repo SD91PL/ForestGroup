@@ -15,6 +15,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
+	color: #212529;
 	background-color: #fff;
 }
 
@@ -452,6 +453,7 @@ nav,
 	display: block;
 	background-color: #eee;
 	.wrapper {
+		padding: 5px 7.5px 7.5px;
 		.footer-box {
 			display: flex;
 			// flex-direction: row;
@@ -461,8 +463,9 @@ nav,
 			width: 100%;
 			.footer-logo {
 				display: none;
-				padding: 0 20px;
+				padding: 20px 20px 0;
 				width: 100%;
+
 				// background-color: gold;
 				.footer-brand {
 					margin: 3rem;
@@ -472,7 +475,7 @@ nav,
 					p {
 						display: inline-block;
 						position: relative;
-						top: 12px;
+						top: -4px;
 						left: 10px;
 						font-size: 4.4rem;
 					}
@@ -489,6 +492,7 @@ nav,
 					width: 66.6%;
 					// background-color: royalblue;
 					h3 {
+						margin: 0 0 5px;
 						font-size: 2rem;
 						font-weight: bold;
 					}
@@ -797,7 +801,7 @@ nav,
 	.offers {
 		.container {
 			.offers-wrap {
-				justify-content: space-evenly;
+				justify-content: space-around;
 				.offer-card {
 					max-width: 330px;
 					width: 100%;
@@ -822,11 +826,14 @@ nav,
 		.container {
 			max-width: 1080px;
 			.offers-wrap {
-				justify-content: space-around;
+				justify-content: space-between;
 				.offer-card {
+					width: 325px;
 					max-width: 325px;
+					width: 100%;
 					.offer-box {
-						max-width: 325px;
+						width: 325px;
+						min-width: 325px;
 						height: 420px;
 						h3 {
 							font-size: 2.4rem;
