@@ -4,16 +4,44 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Forest Group</title>
-		<!-- <link
+		<link
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
 rel="stylesheet"
 integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-crossorigin="anonymous" /> -->
+crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./dist/css/style.min.css">
+<link rel="stylesheet" href="./dist/css/styleBootstrap5.3.min.css">
 	</head>
 	<body data-bs-spy="scroll" data-bs-target="#navbar">
-		@include 'nav.kit'
+		<nav id="navbar" class="navbar navbar-expand-lg">
+	<div class="container wrapper">
+		<a class="navbar-brand" href="#home">
+			<img
+				class="navbar-brand-icon"
+				src="./dist/img/tree-fill.svg"
+				alt="Logotyp firmy Forest Group - ciemnoszara grafika drzewa iglastego" />Forest
+		</a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup"
+			aria-expanded="false"
+			aria-label="Toggle navigation">
+			<img src="./dist/img/list.svg" alt="Przycisk do rozwijania nawigacji" />
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ms-auto">
+				<a class="nav-link active" aria-current="page" href="#home">Home</a>
+				<a class="nav-link" href="#aboutus">O nas</a>
+				<a class="nav-link" href="#offers">Oferta</a>
+				<a class="nav-link" href="#contact">Kontakt</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
 		<header id="home" class="header">
     <div class="hero-img">
         <div class="hero-shadow"></div>
@@ -59,8 +87,8 @@ crossorigin="anonymous" /> -->
 	<div class="container">
 		<p class="offers-hint">Wybierz jedną ze wspaniałych ofert!</p>
 		<!-- Remove bootstrap classes and change style of elements using Flexbox and CSS Grid - if have time -->
-		<div class="offers-wrap">
-			<div class="offer-card demo">
+		<div class="offers-wrap justify-content-center row">
+			<div class="offer-card col-sm-6 col-lg-4 order-0 order-sm-2 order-lg-0">
 				<div class="offer-box">
 					<h3>Demo</h3>
 					<p class="price">$0</p>
@@ -80,7 +108,7 @@ crossorigin="anonymous" /> -->
 					<button type="button" class="btn">Wybierz</button>
 				</div>
 			</div>
-			<div class="offer-card standard">
+			<div class="offer-card col-sm-12 col-lg-4 order-1 order-sm-4 order-lg-1">
 				<div class="offer-box offer-standard">
 					<h3>Standard</h3>
 					<p class="price">$99</p>
@@ -98,7 +126,7 @@ crossorigin="anonymous" /> -->
 					<button type="button" class="btn btn-standard glass">Wybierz</button>
 				</div>
 			</div>
-			<div class="offer-card premium">
+			<div class="offer-card col-sm-6 col-lg-4 order-3 order-lg-3">
 				<div class="offer-box">
 					<h3>Premium</h3>
 					<p class="price">$299</p>
@@ -168,7 +196,7 @@ crossorigin="anonymous" /> -->
 	</div>
 </footer>
 
-			<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src='./dist/js/main.min.js'></script>
 		</main>
 	</body>

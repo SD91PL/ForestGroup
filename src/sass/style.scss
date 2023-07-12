@@ -185,6 +185,11 @@ nav,
 	margin: 1em auto;
 	font-size: 3rem;
 	text-transform: uppercase;
+	font-weight: normal;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
 }
 
 // ABOUT-US
@@ -280,19 +285,41 @@ nav,
 
 // OFFERS
 .offers {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	.container {
+		width: 100%;
 		.offers-hint {
 			font-size: 1.6rem;
 			text-align: center;
 			margin-bottom: 2em;
 		}
 		.offers-wrap {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			margin-bottom: 2em;
+			// background-color: red;
+			.demo {
+				order: 0;
+			}
+			.standard {
+				order: 1;
+			}
+			.premium {
+				order: 3;
+			}
 			.offer-card {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				min-width: 260px;
+				max-width: 300px;
+				width: 100%;
 				.offer-box {
 					display: flex;
 					flex-direction: column;
@@ -300,7 +327,6 @@ nav,
 					margin: 20px 10px;
 					padding: 20px 15px;
 					width: 100%;
-					max-width: 300px;
 					background-color: #fff;
 					border-radius: 6px;
 					box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
@@ -310,9 +336,11 @@ nav,
 						color: #000;
 						font-size: 2rem;
 						margin: 10px 0;
+						font-weight: normal;
 					}
 					.price {
 						font-size: 4rem;
+						margin-bottom: 1.5rem;
 					}
 					ul {
 						display: flex;
@@ -321,6 +349,7 @@ nav,
 						position: relative;
 						left: -10px;
 						margin: 0 auto;
+						padding: 0 0 0 20px;
 						li {
 							padding: 5px;
 							text-align: left;
@@ -343,6 +372,9 @@ nav,
 						padding: 10px 20px;
 						box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 						font-size: 1.6rem;
+						background-color: #fff;
+						border-radius: 5px;
+						border-color: transparent;
 						cursor: pointer;
 						overflow: hidden;
 					}
@@ -380,6 +412,7 @@ nav,
 		.offers-info {
 			font-size: 1.4rem;
 			text-align: center;
+			margin: 0 0 10px;
 
 			a,
 			a::after,
@@ -535,13 +568,33 @@ nav,
 	.offers {
 		.container {
 			.offers-wrap {
+				flex-direction: row;
+				flex-wrap: wrap;
 				.offer-card {
+					min-width: 240px;
+					max-width: 300px;
+					width: 100%;
 					.offer-box {
 						padding: 20px 10px;
 						h3 {
 							margin: 10px 0;
 						}
 					}
+				}
+				.demo {
+					order: 2;
+					max-width: 240px;
+					margin-right: 7.5px;
+				}
+				.standard {
+					order: 4;
+					margin: 0 7.5px;
+					
+				}
+				.premium {
+					order: 3;
+					max-width: 240px;
+					margin-left: 7.5px;
 				}
 			}
 		}
@@ -589,6 +642,7 @@ nav,
 		.container {
 			.offers-wrap {
 				.offer-card {
+					min-width: 300px;
 					.offer-box {
 						padding: 30px;
 						h3 {
@@ -637,6 +691,24 @@ nav,
 		}
 		&__text {
 			font-size: 1.6rem;
+		}
+	}
+
+	.offers {
+		.container {
+			.offers-wrap {
+				.demo {
+					order: 0;
+					margin-right: 0;
+				}
+				.standard {
+					order: 1;
+				}
+				.premium {
+					order: 3;
+					margin-left: 0;
+				}
+			}
 		}
 	}
 
@@ -702,6 +774,7 @@ nav,
 		.container {
 			.offers-wrap {
 				.offer-card {
+					min-width: 330px;
 					.offer-box {
 						max-width: 90%;
 					}
