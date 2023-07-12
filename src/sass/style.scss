@@ -258,7 +258,7 @@ button {
 			border: #fff 1px solid;
 			transition: background-color 0.33s;
 			.banner-text {
-				margin: 0;
+				padding: 4px;
 				font-size: 3rem;
 				transition: scale 0.33s, text-shadow 0.33s;
 			}
@@ -591,7 +591,6 @@ button {
 				.standard {
 					order: 4;
 					margin: 0 7.5px;
-					
 				}
 				.premium {
 					order: 3;
@@ -783,6 +782,7 @@ button {
 			.hero-text {
 				max-width: 1050px;
 				.banner-text {
+					padding: 5.5px;
 					font-size: 4rem;
 				}
 			}
@@ -821,10 +821,8 @@ button {
 				.offer-card {
 					max-width: 325px;
 					.offer-box {
-						// max-width: 95%;
 						max-width: 325px;
 						height: 420px;
-						// max-height: 420px;
 						h3 {
 							font-size: 2.4rem;
 						}
