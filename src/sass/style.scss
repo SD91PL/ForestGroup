@@ -12,12 +12,17 @@
 	scroll-padding-top: 79px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 	color: #212529;
 	background-color: #fff;
 }
+
 
 .wrapper {
 	margin: 0 auto;
@@ -32,8 +37,7 @@ body {
 //  NAV
 
 nav,
-.navbar,
-.navbar-expand-lg {
+.navbar {
 	padding: 0;
 	font-size: 1.6rem;
 }
@@ -41,89 +45,111 @@ nav,
 .navbar {
 	position: sticky;
 	top: 0;
+	padding: 0 7.5px;
 	width: 100%;
 	height: 80px;
 	background-color: #fff;
 	box-shadow: 0px -2px 10px #00000080;
 	z-index: 1000;
-	.navbar-brand {
-		position: relative;
-		padding: 0 17px 0 10px;
-		height: 80px;
-		font-size: 3rem;
-		line-height: 80px;
-		transition: background-color 0.33s, color 0.33s;
-		&:hover {
-			background-color: #111;
-			color: #eee;
-			cursor: pointer;
-		}
-		&:focus {
-			outline: none;
-			box-shadow: none;
-			background-color: #222;
-			color: #eee;
-		}
-		.navbar-brand-icon {
-			margin-bottom: 5px;
-			margin-right: 6px;
-			margin-left: 6px;
-			height: 2.5rem;
-			width: 2.5rem;
-		}
-	}
-	.navbar-collapse {
-		.navbar-nav {
-			background-color: #fff;
-			box-shadow: 0px 5px 5px #00000040;
-			.nav-link {
-				padding: 30px;
-				min-width: 125px;
-				height: 80px;
-				text-align: center;
-				line-height: 20px;
-				border-bottom: 1px solid rgba(193, 193, 193, 0.2);
-				&:hover {
-					background-color: #222;
-					color: #eee;
-					cursor: pointer;
-				}
-				&:focus {
-					outline: none;
-					box-shadow: none;
-					background-color: #222;
-					color: #eee;
-				}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.navbar-brand {
+			position: relative;
+			top: 0;
+			padding: 0 17px 0px 10px;
+			height: 100%;
+			font-size: 3rem;
+			text-decoration: none;
+			color: #212529;
+			line-height: 80px;
+			transition: background-color 0.33s, color 0.33s;
+			&:hover {
+				background-color: #111;
+				color: #eee;
+				cursor: pointer;
 			}
-			.active {
-				background-color: #000;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+				background-color: #222;
 				color: #eee;
 			}
+			.navbar-brand-icon {
+				margin-bottom: -2px;
+				margin-right: 6px;
+				margin-left: 6px;
+				height: 2.5rem;
+				width: 2.5rem;
+			}
 		}
-	}
-	.navbar-toggler {
-		position: relative;
-		top: 0;
-		right: 0;
-		background-color: #000;
-		padding: 10px 30px;
-		border-radius: 0;
-		height: 80px;
-		transition: background-color 0.33s, color 0.33s;
-		&:hover {
-			background-color: #222;
-			color: #eee;
-			cursor: pointer;
+		.navbar-collapse {
+			display: none;
+			height: 80px;
+			.navbar-nav {
+				display: flex;
+				flex-direction: row;
+				height: 80px;
+				background-color: #fff;
+				box-shadow: 0px 5px 5px #00000040;
+				.nav-link {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 30px;
+					min-width: 125px;
+					// background-color: red;
+					color: #212529;
+					text-decoration: none;
+					text-align: center;
+					line-height: 80px;
+					border-bottom: 0px solid rgba(193, 193, 193, 0.2);
+					&:hover {
+						background-color: #222;
+						color: #eee;
+						cursor: pointer;
+					}
+					&:focus {
+						outline: none;
+						box-shadow: none;
+						background-color: #222;
+						color: #eee;
+					}
+				}
+				.active {
+					background-color: #000;
+					color: #eee;
+					// line-height: 80px;
+					// height: 80px;
+				}
+			}
 		}
-		&:focus {
-			outline: none;
-			box-shadow: none;
-			background-color: #222;
-			color: #eee;
-		}
-		img {
-			width: 30px;
-			height: 30px;
+		.navbar-toggler {
+			position: relative;
+			top: 0;
+			right: 0;
+			background-color: #000;
+			padding: 10px 30px;
+			border: transparent;
+			border-radius: 0;
+			height: 80px;
+			transition: background-color 0.33s, color 0.33s;
+			&:hover {
+				background-color: #222;
+				color: #eee;
+				cursor: pointer;
+			}
+			&:focus {
+				outline: none;
+				box-shadow: none;
+				background-color: #222;
+				color: #eee;
+			}
+			img {
+				width: 30px;
+				height: 30px;
+			}
 		}
 	}
 }
@@ -188,7 +214,7 @@ nav,
 	margin: 1em auto;
 	font-size: 3rem;
 	text-transform: uppercase;
-	font-weight: normal;
+	// font-weight: normal;
 }
 
 // ABOUT-US
@@ -335,7 +361,7 @@ nav,
 						color: #000;
 						font-size: 2rem;
 						margin: 10px 0;
-						font-weight: normal;
+						// font-weight: normal;
 					}
 					.price {
 						font-size: 4rem;
@@ -669,12 +695,18 @@ nav,
 
 @media (min-width: 992px) {
 	.navbar {
-		.navbar-collapse {
-			.navbar-nav {
-				background-color: #fff;
-				box-shadow: none;
-				.nav-link {
-					border-bottom: none;
+		.container {
+			.navbar-toggler {
+				display: none;
+			}
+			.navbar-collapse {
+				display: block;
+				.navbar-nav {
+					background-color: #fff;
+					box-shadow: none;
+					.nav-link {
+						border-bottom: none;
+					}
 				}
 			}
 		}
