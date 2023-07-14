@@ -709,7 +709,7 @@ nav,
 			}
 			.navbar-collapse {
 				display: block;
-				scale: 1 1; 
+				scale: 1 1; // don't touch it! 
 				max-width: 80%; // space left for a few more links
 				.navbar-nav {
 					flex-direction: row;
