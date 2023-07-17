@@ -425,6 +425,14 @@ nav,
 						border-color: transparent;
 					}
 
+					.btn-add {
+						transition: background-color .33s, color .33s;
+					}
+					.btn-add:hover {
+						background-color: #000;
+						color: #fff;
+					}
+
 					.glass {
 						visibility: visible;
 					}
