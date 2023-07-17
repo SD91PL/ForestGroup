@@ -396,6 +396,9 @@ nav,
 						.minus {
 							color: #858685;
 						}
+						.access {
+							margin-bottom: 0.3rem;
+						}
 					}
 
 					button {
@@ -642,6 +645,9 @@ nav,
 	}
 	.offers {
 		.container {
+			.other {
+				justify-content: space-evenly;
+			}
 			.offers-info {
 				a:hover {
 					color: #fff;
@@ -650,6 +656,7 @@ nav,
 					height: 115%;
 				}
 			}
+
 		}
 	}
 	.footer {
@@ -684,6 +691,7 @@ nav,
 			.offers-wrap {
 				.offer-card {
 					min-width: 300px;
+					margin: 0 1rem;
 					padding: 0 7.5px;
 					.offer-box {
 						padding: 30px;
