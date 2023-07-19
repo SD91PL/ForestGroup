@@ -12,10 +12,6 @@
 	scroll-padding-top: 79px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
@@ -24,6 +20,13 @@ body {
 	line-height: 1.44;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+button {
+	font-family: inherit;
+}
 
 .wrapper {
 	margin: 0 auto;
@@ -403,7 +406,6 @@ nav,
 
 					button {
 						height: 47px;
-						font-family: 'Montserrat', sans-serif;
 					}
 
 					.btn {
