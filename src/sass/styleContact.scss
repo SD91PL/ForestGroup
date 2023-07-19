@@ -37,16 +37,16 @@ h1 {
 	label {
 		display: inline-block;
 		margin-bottom: 4px;
+		font-size: 1.6rem;
 	}
 	input {
 		width: 100%;
-
 	}
 	textarea {
 		display: block;
 		min-width: 100%;
 		max-width: 100%;
-		min-height: 160px;
+		min-height: 100px;
 	}
 	input,
 	textarea {
@@ -128,4 +128,60 @@ h1 {
 
 .show-popup {
 	top: 120px;
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 375px) {
+	.contact-wrapper {
+		width: 340px;
+	}
+}
+
+@media (min-width: 576px) {
+	.contact-wrapper {
+		width: 360px;
+	}
+}
+
+@media (min-width: 768px) {
+	.contact-wrapper {
+		width: 400px;
+	}
+	label {
+		font-size: 1.7rem;
+	}
+	.form-box {
+		input,
+		textarea {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.contact-wrapper {
+		width: 440px;
+	}
+	label {
+		font-size: 1.8rem;
+	}
+	.form-box {
+		input,
+		textarea {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.contact-wrapper {
+		width: 480px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.contact-wrapper {
+		width: 540px;
+	}
 }
