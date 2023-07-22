@@ -1,3 +1,28 @@
+.contact-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.phone {
+	align-content: center;
+	text-align: center;
+	&--number {
+		line-height: 2;
+		font-size: 3rem;
+		img {
+			height: 2rem;
+			padding-right: 2rem;
+		}
+	}
+}
+
 .center {
 	display: flex;
 	justify-content: center;
