@@ -11,13 +11,14 @@ a {
 }
 
 .phone {
-	padding: 1rem;
-	margin-bottom: 1rem;
+	padding: 1.5rem;
+	margin-bottom: 1.25rem;
 	align-content: center;
 	text-align: center;
 	&--number {
 		line-height: 2;
 		font-size: 3rem;
+		// font-weight: bold;
 		img {
 			height: 2rem;
 			padding-right: 2rem;
@@ -187,13 +188,13 @@ h1 {
 
 @media (min-width: 576px) {
 	.contact-wrapper {
-		width: 360px;
+		width: 400px;
 	}
 }
 
 @media (min-width: 768px) {
 	.contact-wrapper {
-		width: 400px;
+		width: 440px;
 	}
 	label {
 		font-size: 1.7rem;
@@ -208,7 +209,7 @@ h1 {
 
 @media (min-width: 992px) {
 	.contact-wrapper {
-		width: 440px;
+		width: 480px;
 	}
 	label {
 		font-size: 1.8rem;
@@ -223,7 +224,7 @@ h1 {
 
 @media (min-width: 1200px) {
 	.contact-wrapper {
-		width: 480px;
+		width: 500px;
 	}
 }
 
