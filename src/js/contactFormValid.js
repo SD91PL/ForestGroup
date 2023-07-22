@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // clearBtn.ade
 
 // part 2
-// in checkForm the "input" parameter it's tablica "inputs" from sendBtn.ade
+// in checkForm the "input" parameter it's array "inputs" from sendBtn.ade
 // in showError the "input" parameter it's "el" from checkForm
 // in showError the "msg" parameter it's "el.placeholder" from checkForm
 // in clearError the "input" parameter it's "el" from checkForm
