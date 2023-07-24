@@ -20,7 +20,12 @@ body {
 	line-height: 1.44;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: normal;
 }
 
@@ -47,7 +52,7 @@ nav,
 }
 
 .navbar {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	padding: 0 7.5px;
 	width: 100%;
@@ -98,7 +103,7 @@ nav,
 			scale: 1 0;
 			width: 100%;
 			max-width: 1200px;
-			transition: scale .33s;
+			transition: scale 0.33s;
 			.navbar-nav {
 				display: flex;
 				flex-direction: column;
@@ -135,7 +140,8 @@ nav,
 		.menu-appear {
 			scale: 1 1;
 		}
-		.navbar-toggler, .navbar-back {
+		.navbar-toggler,
+		.navbar-back {
 			position: relative;
 			top: 0;
 			right: 0;
@@ -164,16 +170,21 @@ nav,
 	}
 }
 
+.nav-back-sticky {
+	position: sticky;
+}
+
 // HEADER
 
 .header {
-	height: calc(100vh - 80px);
+	height: 100vh;
 	.hero-img {
 		position: relative;
 		height: 100%;
 		background-image: url(../img/jungle-1807476_1280.jpg);
 		background-position: 50% 80%;
 		background-size: cover;
+		overflow: hidden;
 		.hero-shadow {
 			width: 100%;
 			height: 100%;
@@ -184,6 +195,7 @@ nav,
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			transform-origin: top left;
 			transform: translateY(-50%) translateX(-50%);
 			padding: 30px;
 			width: 100%;
@@ -428,7 +440,7 @@ nav,
 					}
 
 					.btn-add {
-						transition: background-color .33s, color .33s;
+						transition: background-color 0.33s, color 0.33s;
 					}
 					.btn-add:hover {
 						background-color: #000;
@@ -580,6 +592,9 @@ nav,
 // MEDIA QUERIES
 
 @media (min-width: 375px) {
+	.navbar {
+		position: sticky;
+	}
 	.header {
 		height: 265px;
 	}
@@ -666,7 +681,6 @@ nav,
 					height: 115%;
 				}
 			}
-
 		}
 	}
 	.footer {
@@ -727,7 +741,7 @@ nav,
 			}
 			.navbar-collapse {
 				display: block;
-				scale: 1 1; // don't touch it! 
+				scale: 1 1; // don't touch it!
 				max-width: 80%; // space left for a few more links
 				.navbar-nav {
 					flex-direction: row;
