@@ -142,8 +142,6 @@ nav,
 			}
 		}
 		.menu-appear {
-			// display: block;
-			// height: 100%;
 			scale: 1 1;
 		}
 		.navbar-toggler,
@@ -224,7 +222,7 @@ nav,
 			position: absolute;
 			left: 50%;
 			bottom: 12vh;
-			// padding: 10px; // it makes bugs with centering // it have to be in img tag
+			// padding: 10px; // it makes bugs with centering // just in case it have to be in img tag
 			transform: translate(-50%, -12px);
 			img {
 				height: 50px;
