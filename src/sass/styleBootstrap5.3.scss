@@ -437,7 +437,6 @@ nav,
 	.wrapper {
 		.footer-box {
 			display: flex;
-			// flex-direction: row;
 			margin: 0;
 			padding-top: 0.6rem;
 			padding-bottom: 0.6rem;
@@ -446,7 +445,6 @@ nav,
 				display: none;
 				padding: 0 20px;
 				width: 100%;
-				// background-color: gold;
 				.footer-brand {
 					margin: 3rem;
 					img {
@@ -464,13 +462,11 @@ nav,
 			.footer-nav {
 				padding: 2rem 0;
 				width: 100%;
-				// background-color: tomato;
 				.footer-nav-card {
 					position: relative;
 					left: 33.3%;
 					margin: 3rem 0;
 					width: 66.6%;
-					// background-color: royalblue;
 					h3 {
 						font-size: 2rem;
 						font-weight: bold;
@@ -593,7 +589,6 @@ nav,
 				}
 				.footer-nav {
 					.footer-nav-card {
-						// position: static; // or else
 						left: 0;
 						width: 100%;
 					}
