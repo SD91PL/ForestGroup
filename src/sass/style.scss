@@ -1,3 +1,5 @@
+@use './animation' as anims;
+
 *,
 *::before,
 *::after {
@@ -182,6 +184,7 @@ nav,
 
 .header {
 	height: 100vh;
+	// overflow: hidden;
 	.hero-img {
 		position: relative;
 		height: 100%;
@@ -215,6 +218,18 @@ nav,
 				margin: 0 0 10px;
 				font-size: 2.7rem;
 				font-weight: bold;
+			}
+		}
+		.chevron-down {
+			display: flex;
+			position: absolute;
+			left: 50%;
+			bottom: 12vh;
+			// padding: 10px; // it makes bugs with centering // it have to be in img tag
+			transform: translate(-50%, -12px);
+			// z-index: 10;
+			img {
+				height: 50px;
 			}
 		}
 	}
@@ -601,6 +616,11 @@ nav,
 	}
 	.header {
 		height: 265px;
+		.hero-img {
+			.chevron-down {
+				display: none;
+			}
+		}
 	}
 }
 
