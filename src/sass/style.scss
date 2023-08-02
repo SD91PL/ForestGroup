@@ -184,7 +184,6 @@ nav,
 
 .header {
 	height: 100vh;
-	// overflow: hidden;
 	.hero-img {
 		position: relative;
 		height: 100%;
@@ -227,7 +226,6 @@ nav,
 			bottom: 12vh;
 			// padding: 10px; // it makes bugs with centering // it have to be in img tag
 			transform: translate(-50%, -12px);
-			// z-index: 10;
 			img {
 				height: 50px;
 			}
@@ -255,7 +253,6 @@ nav,
 	margin: 1em auto;
 	font-size: 3rem;
 	text-transform: uppercase;
-	// font-weight: normal;
 }
 
 // ABOUT-US
@@ -402,7 +399,6 @@ nav,
 						color: #000;
 						font-size: 2rem;
 						margin: 10px 0;
-						// font-weight: normal;
 					}
 					.price {
 						font-size: 4rem;
@@ -533,7 +529,6 @@ nav,
 		padding: 5px 7.5px 7.5px;
 		.footer-box {
 			display: flex;
-			// flex-direction: row;
 			margin: 0;
 			padding-top: 0.6rem;
 			padding-bottom: 0.6rem;
@@ -543,7 +538,6 @@ nav,
 				padding: 20px 20px 0;
 				width: 100%;
 
-				// background-color: gold;
 				.footer-brand {
 					margin: 3rem;
 					img {
@@ -561,13 +555,11 @@ nav,
 			.footer-nav {
 				padding: 2rem 0;
 				width: 100%;
-				// background-color: tomato;
 				.footer-nav-card {
 					position: relative;
 					left: 33.3%;
 					margin: 3rem 0;
 					width: 66.6%;
-					// background-color: royalblue;
 					h3 {
 						margin: 0 0 5px;
 						font-size: 2rem;
@@ -715,7 +707,6 @@ nav,
 				}
 				.footer-nav {
 					.footer-nav-card {
-						// position: static; // or else
 						left: 0;
 						width: 100%;
 					}
