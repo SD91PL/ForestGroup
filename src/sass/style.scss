@@ -106,7 +106,8 @@ nav,
 			transform: scale(1, 0);
 			width: 100%;
 			max-width: 1200px;
-			transition: scale 0.33s;
+			// transition: scale 0.33s; // because changed property "scale" to "transform:scale();"
+			transition: transform 0.33s;
 			.navbar-nav {
 				display: flex;
 				flex-direction: column;
